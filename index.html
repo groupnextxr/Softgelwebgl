@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Softgelwebgl.loader.js";
+      var loaderUrl = buildUrl + "/Bits_SoftgelWebGL_29Sept.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Softgelwebgl.data",
-        frameworkUrl: buildUrl + "/Softgelwebgl.framework.js",
-        codeUrl: buildUrl + "/Softgelwebgl.wasm",
+        dataUrl: buildUrl + "/Bits_SoftgelWebGL_29Sept.data",
+        frameworkUrl: buildUrl + "/Bits_SoftgelWebGL_29Sept.framework.js",
+        codeUrl: buildUrl + "/Bits_SoftgelWebGL_29Sept.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NextXrIndia",
         productName: "BITS_Softgel_webgl",
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
